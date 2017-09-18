@@ -341,7 +341,7 @@ OPTIONAL
 
 Write the command(s) that you used to do this below:
 ----------
-
+cd ../..
 ==========
 OPTIONAL
 14. Find out what the most recently modified directory is in mtec1002 (there are only 3 to choose from)?  How would you find this out?  Hint: perhaps using something to show the modified date... and sort it by time.
