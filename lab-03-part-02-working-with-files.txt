@@ -184,5 +184,5 @@ wc pg1232.txt
 ==========
 22.  How many lines are in pg1232.txt?  What command did you use to determine the line count?
 ----------
- wc pg1232.txt or wc -1 pg1232.txt
+ wc pg1232.txt or wc -l pg1232.txt
  5063 lines  
