@@ -12,7 +12,7 @@ Follow the instructions line-by-line.
 [NO OUTPUT]
 ----------
 ==========
-2. Find out if mtec1002-lab-02 already exists (from the previous lab).  If it doesn't, go back to the previous lab and find the steps regarding downloading the lab materials.
+2. Find out if mtec1002-lab-03 already exists (from the previous lab).  If it doesn't, go back to the previous lab and find the steps regarding downloading the lab materials.
 
 (See steps 1-8 in http://foureyes.github.io/mtec1002-spring2014/labs/03/lab-03-part-02-working-with-files.txt)
 [NO OUTPUT]
@@ -36,7 +36,7 @@ $ touch foo.txt
 $ ls
 Copy and paste the output below.
 ----------
-
+fo.txt
 
 
 ==========
@@ -52,7 +52,7 @@ $ touch bar.txt
 
 Copy and paste the output below.
 ----------
-
+bar.txt	foo.txt (use another flag)
 
 
 ==========
@@ -61,22 +61,27 @@ Copy and paste the output below.
 
 Write the command that you used to copy the file.  Additionally, copy and paste the output of your file listing below.
 ----------
+cp bar.txt
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvX] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvX] source_file ... target_directory
 
-
-
+touch bar.txt baz.txt
+ls
+bar.txt	baz.txt	foo.txt
 ==========
 10. Delete the file called bar.txt and then list the files again.
 
 Write the command that you used to remove the file.  Copy and paste the output of your file listing below.
-----------
-==========
+----------rm bar.txt
+==========baz.txt	foo.txt
 11. Move the file called foo.txt to qux.txt and then list the files again.
 
+baz.txt	quz.txt
 
 Write the command that you used to move the file.  Copy and paste the output of your file listing below.
 ----------
-
-
+mv foo.txt quz.txt
+baz.txt	quz.txt
 
 ==========
 12. Go up one directory so that you're in ~/mtec1002-lab-03.
@@ -90,7 +95,8 @@ Write the command that you used to move the file.  Copy and paste the output of 
 
 Write out the command that you used and what happened.
 ----------
-
+rmdir: my_files: Directory not empty
+It does not let you remove the directory because it is not empty
 
 
 ==========
@@ -98,7 +104,8 @@ Write out the command that you used and what happened.
 
 Write out the command that you used and what happened.
 ----------
-
+rm: my_files: is a directory
+rm only removes files not directories
 
 
 ==========
@@ -120,7 +127,7 @@ Use the command called cat on the file to show its contents.
 
 Describe what happened below.
 ----------
-
+This command shows us the text inside the txt file. 
 
 
 ==========
@@ -132,8 +139,8 @@ Use the command, head, on the file to show the contents of the beginning of the 
 
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
-
-
+head pg1232.txt
+Title: The Prince
 
 ==========
 18. Using the same file again!
@@ -144,7 +151,8 @@ Use tail on the file to show the contents of the end of the file.
 
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
-
+tail pg1232.txt
+subscribe to our email newsletter to hear about new eBooks.
 
 
 ==========
@@ -156,23 +164,25 @@ Use less and more on the file to show the contents of the file.  Try pressing sp
 
 Write the command that you used below.  Describe what spacebar and q does after using either less or more.
 ----------
-
-
-
+less pg1232.txt  
+more pg1232.txt
+space and q scrolls through the text
 ==========
 20. Describe what situations you would use the following commands for viewing files: less, more, cat, tail, head
 
 (Some characteristics that may help your description might be the length of the file, whether or not you'd like to read the whole thing... or just the beginning or end, etc.)
 ----------
-
+less and more shows the content of a file with pagination, cat shows all the content of a file. head shows the beginning contents of a file and tail shows the end contents of a file.
 
 
 ==========
 21.  How many words are in pg1232.txt?  What command did you use to determine the word count?
 ----------
-
-
+wc pg1232.txt
+52639 words 
 
 ==========
 22.  How many lines are in pg1232.txt?  What command did you use to determine the line count?
 ----------
+ wc pg1232.txt or wc -1 pg1232.txt
+ 5063 lines  
