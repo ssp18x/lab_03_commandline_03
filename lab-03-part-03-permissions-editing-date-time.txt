@@ -70,8 +70,8 @@ World can read
 
 What commands did you use to do this?  What was the output?
 ----------
-
-
+chmod u+x copy_to_backup.sh.
+no output
 
 ==========
 7. Try executing the file!
@@ -80,7 +80,13 @@ $ ./copy_to_backup.sh
 
 What command did you use to try to execute the file?  What happens?
 ----------
-
+Seans-Mac:~ sean$ /Users/sean/copy_to_backup.sh. ; exit;
+logout
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+Deleting expired sessions...none found.
 
 
 ==========
@@ -88,7 +94,7 @@ What command did you use to try to execute the file?  What happens?
 
 What command did you use to do this?
 ----------
-
+nano copy_to_backup.sh
 
 
 ==========
@@ -100,7 +106,9 @@ c. print out "I'm done backing up"
 
 Write out the code in your file below...
 ----------
-
+mkdir -p backup
+cp #.txt
+print "I'm done backing up"
 
 
 ==========
@@ -111,8 +119,10 @@ Write out the code in your file below...
 
 What commands did you use to do this?
 ----------
-
-
+mkdir -p test
+cd test
+touch 1.txt
+touch 2.txt
 
 ==========
 12. Move the script that you created into this directory.
